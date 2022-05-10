@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: organizationservice
+  profiles:
+    active: study
+  config:
+    import: configserver:http://localhost:10001
+logging:
+  config: classpath:logback-spring.xml

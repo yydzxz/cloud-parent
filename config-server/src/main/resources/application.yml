@@ -1,0 +1,32 @@
+server:
+  port: 10001
+
+spring:
+  profiles:
+    active: git
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:yydzxz/private-config.git
+          searchPaths: '{application}'
+          defaultLabel: master
+          basedir: /Users/yangyidian/code/cloud-config
+  application:
+    name: config-server
+management:
+  server:
+    port: 10002
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:10011/eureka,http://127.0.0.1:10012/eureka

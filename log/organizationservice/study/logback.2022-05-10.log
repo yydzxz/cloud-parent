@@ -1,0 +1,897 @@
+2022-05-10 15:16:06.471  INFO [organizationservice,,] 3285 --- [main] i.g.y.c.o.OrganizationserviceApplication : Starting OrganizationserviceApplication using Java 1.8.0_192 on yangyidiandeMacBook-Pro.local with PID 3285 (/Users/yangyidian/code/github/yydzxz/cloud-parent/organizationservice/target/classes started by yangyidian in /Users/yangyidian/code/github/yydzxz/cloud-parent)
+"2022-05-10 15:16:06.473 DEBUG [organizationservice,,] 3285 --- [main] i.g.y.c.o.OrganizationserviceApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+"2022-05-10 15:16:06.474  INFO [organizationservice,,] 3285 --- [main] i.g.y.c.o.OrganizationserviceApplication : The following 1 profile is active: "study"
+"2022-05-10 15:16:06.503  INFO [organizationservice,,] 3285 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:10001
+"2022-05-10 15:16:06.503  INFO [organizationservice,,] 3285 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=organizationservice, profiles=[study], label=null, version=9cbd074279cd98b47ec7461c642dfc2643a89951, state=null
+"2022-05-10 15:16:07.352  INFO [organizationservice,,] 3285 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73ef3d08-2ba2-36de-943f-0523714bf661
+"2022-05-10 15:16:07.896  INFO [organizationservice,,] 3285 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10201 (http)
+"2022-05-10 15:16:07.903  INFO [organizationservice,,] 3285 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+"2022-05-10 15:16:07.903  INFO [organizationservice,,] 3285 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+"2022-05-10 15:16:08.000  INFO [organizationservice,,] 3285 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+"2022-05-10 15:16:08.001  INFO [organizationservice,,] 3285 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1497 ms
+"2022-05-10 15:16:09.618  INFO [organizationservice,,] 3285 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+"2022-05-10 15:16:09.734  WARN [organizationservice,,] 3285 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+"2022-05-10 15:16:09.844  INFO [organizationservice,,] 3285 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+"2022-05-10 15:16:09.875  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+"2022-05-10 15:16:09.879  INFO [organizationservice,,] 3285 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 15:16:09.895  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+"2022-05-10 15:16:09.895  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+"2022-05-10 15:16:09.895  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+"2022-05-10 15:16:09.896  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+"2022-05-10 15:16:09.896  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+"2022-05-10 15:16:09.896  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+"2022-05-10 15:16:09.896  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+"2022-05-10 15:16:10.071  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+"2022-05-10 15:16:10.075  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+"2022-05-10 15:16:10.078  INFO [organizationservice,,] 3285 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+"2022-05-10 15:16:10.083  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1652166970082 with initial instances count: 4
+"2022-05-10 15:16:10.090  INFO [organizationservice,,] 3285 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORGANIZATIONSERVICE with eureka with status UP
+"2022-05-10 15:16:10.090  INFO [organizationservice,,] 3285 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652166970090, current=UP, previous=STARTING]
+"2022-05-10 15:16:10.092  INFO [organizationservice,,] 3285 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+"2022-05-10 15:16:10.122  INFO [organizationservice,,] 3285 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10201 (http) with context path ''
+"2022-05-10 15:16:10.125  INFO [organizationservice,,] 3285 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 10201
+"2022-05-10 15:16:10.147  INFO [organizationservice,,] 3285 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+"2022-05-10 15:16:10.201  INFO [organizationservice,,] 3285 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10202 (http)
+"2022-05-10 15:16:10.202  INFO [organizationservice,,] 3285 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+"2022-05-10 15:16:10.202  INFO [organizationservice,,] 3285 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+"2022-05-10 15:16:10.210  INFO [organizationservice,,] 3285 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+"2022-05-10 15:16:10.210  INFO [organizationservice,,] 3285 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 80 ms
+"2022-05-10 15:16:10.220  INFO [organizationservice,,] 3285 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+"2022-05-10 15:16:10.257  INFO [organizationservice,,] 3285 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10202 (http) with context path ''
+"2022-05-10 15:16:10.282  INFO [organizationservice,,] 3285 --- [main] i.g.y.c.o.OrganizationserviceApplication : Started OrganizationserviceApplication in 21.077 seconds (JVM running for 21.724)
+"2022-05-10 15:16:10.603  INFO [organizationservice,,] 3285 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+"2022-05-10 15:16:10.603  INFO [organizationservice,,] 3285 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+"2022-05-10 15:16:10.603  INFO [organizationservice,,] 3285 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+"2022-05-10 15:16:10.605  INFO [organizationservice,,] 3285 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+"2022-05-10 15:16:10.998  INFO [organizationservice,,] 3285 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+"2022-05-10 15:19:56.761  INFO [organizationservice,,] 3285 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORGANIZATIONSERVICE with eureka with status DOWN
+"2022-05-10 15:19:56.762  INFO [organizationservice,,] 3285 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652167196762, current=DOWN, previous=UP]
+"2022-05-10 15:19:56.763  INFO [organizationservice,,] 3285 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+"2022-05-10 15:19:56.767  INFO [organizationservice,,] 3285 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+"2022-05-10 15:19:56.788  INFO [organizationservice,,] 3285 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+"2022-05-10 15:19:56.794  INFO [organizationservice,,] 3285 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+"2022-05-10 15:19:56.798  INFO [organizationservice,,] 3285 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+"2022-05-10 15:19:59.804  INFO [organizationservice,,] 3285 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+"2022-05-10 15:19:59.808  INFO [organizationservice,,] 3285 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - deregister  status: 200
+"2022-05-10 15:19:59.813  INFO [organizationservice,,] 3285 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+"2022-05-10 15:20:14.299  INFO [organizationservice,,] 4274 --- [main] i.g.y.c.o.OrganizationserviceApplication : Starting OrganizationserviceApplication using Java 1.8.0_192 on yangyidiandeMacBook-Pro.local with PID 4274 (/Users/yangyidian/code/github/yydzxz/cloud-parent/organizationservice/target/classes started by yangyidian in /Users/yangyidian/code/github/yydzxz/cloud-parent)
+"2022-05-10 15:20:14.301 DEBUG [organizationservice,,] 4274 --- [main] i.g.y.c.o.OrganizationserviceApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+"2022-05-10 15:20:14.302  INFO [organizationservice,,] 4274 --- [main] i.g.y.c.o.OrganizationserviceApplication : The following 1 profile is active: "study"
+"2022-05-10 15:20:14.333  INFO [organizationservice,,] 4274 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:10001
+"2022-05-10 15:20:14.333  INFO [organizationservice,,] 4274 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=organizationservice, profiles=[study], label=null, version=1ed19c16c1636160c6c7d3644b9ead26c5b615e2, state=null
+"2022-05-10 15:20:15.209  INFO [organizationservice,,] 4274 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73ef3d08-2ba2-36de-943f-0523714bf661
+"2022-05-10 15:20:15.760  INFO [organizationservice,,] 4274 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10201 (http)
+"2022-05-10 15:20:15.767  INFO [organizationservice,,] 4274 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+"2022-05-10 15:20:15.768  INFO [organizationservice,,] 4274 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+"2022-05-10 15:20:15.866  INFO [organizationservice,,] 4274 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+"2022-05-10 15:20:15.866  INFO [organizationservice,,] 4274 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1532 ms
+"2022-05-10 15:20:17.481  INFO [organizationservice,,] 4274 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+"2022-05-10 15:20:17.594  WARN [organizationservice,,] 4274 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+"2022-05-10 15:20:17.714  INFO [organizationservice,,] 4274 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+"2022-05-10 15:20:17.745  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+"2022-05-10 15:20:17.749  INFO [organizationservice,,] 4274 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 15:20:17.765  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+"2022-05-10 15:20:17.765  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+"2022-05-10 15:20:17.765  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+"2022-05-10 15:20:17.766  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+"2022-05-10 15:20:17.766  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+"2022-05-10 15:20:17.766  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+"2022-05-10 15:20:17.766  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+"2022-05-10 15:20:17.956  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+"2022-05-10 15:20:17.959  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+"2022-05-10 15:20:17.961  INFO [organizationservice,,] 4274 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+"2022-05-10 15:20:17.966  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1652167217965 with initial instances count: 5
+"2022-05-10 15:20:17.974  INFO [organizationservice,,] 4274 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORGANIZATIONSERVICE with eureka with status UP
+"2022-05-10 15:20:17.975  INFO [organizationservice,,] 4274 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652167217975, current=UP, previous=STARTING]
+"2022-05-10 15:20:17.977  INFO [organizationservice,,] 4274 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+"2022-05-10 15:20:18.006  INFO [organizationservice,,] 4274 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10201 (http) with context path ''
+"2022-05-10 15:20:18.007  INFO [organizationservice,,] 4274 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 10201
+"2022-05-10 15:20:18.031  INFO [organizationservice,,] 4274 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+"2022-05-10 15:20:18.077  INFO [organizationservice,,] 4274 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10202 (http)
+"2022-05-10 15:20:18.078  INFO [organizationservice,,] 4274 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+"2022-05-10 15:20:18.078  INFO [organizationservice,,] 4274 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+"2022-05-10 15:20:18.085  INFO [organizationservice,,] 4274 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+"2022-05-10 15:20:18.085  INFO [organizationservice,,] 4274 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 74 ms
+"2022-05-10 15:20:18.094  INFO [organizationservice,,] 4274 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+"2022-05-10 15:20:18.128  INFO [organizationservice,,] 4274 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10202 (http) with context path ''
+"2022-05-10 15:20:18.154  INFO [organizationservice,,] 4274 --- [main] i.g.y.c.o.OrganizationserviceApplication : Started OrganizationserviceApplication in 8.936 seconds (JVM running for 9.517)
+"2022-05-10 15:20:18.698  INFO [organizationservice,,] 4274 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+"2022-05-10 15:20:18.698  INFO [organizationservice,,] 4274 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+"2022-05-10 15:20:18.699  INFO [organizationservice,,] 4274 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+"2022-05-10 15:20:18.700  INFO [organizationservice,,] 4274 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+"2022-05-10 15:20:19.136  INFO [organizationservice,,] 4274 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+"2022-05-10 15:20:43.695 DEBUG [organizationservice,57745475abf6aa30,57745475abf6aa30] 4274 --- [http-nio-10201-exec-2] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 15:25:17.779  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 15:28:11.650 DEBUG [organizationservice,6f573214e3356346,6f573214e3356346] 4274 --- [http-nio-10201-exec-3] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 15:29:02.618 DEBUG [organizationservice,b243e1041351e271,b243e1041351e271] 4274 --- [http-nio-10201-exec-4] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 15:30:17.768  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 15:35:17.780  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 15:40:17.794  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 15:42:22.355 DEBUG [organizationservice,a6cd7004c173c8d8,a6cd7004c173c8d8] 4274 --- [http-nio-10201-exec-6] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 15:43:30.386 DEBUG [organizationservice,db94dd0cf7b1e7e0,db94dd0cf7b1e7e0] 4274 --- [http-nio-10201-exec-8] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 15:43:35.833 DEBUG [organizationservice,5cb9a71c12499ead,5cb9a71c12499ead] 4274 --- [http-nio-10201-exec-9] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 15:45:17.813  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 15:50:17.826  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 15:55:17.839  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:00:17.852  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:05:17.879  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:06:34.795 DEBUG [organizationservice,09b9c6db1c4858f6,09b9c6db1c4858f6] 4274 --- [http-nio-10201-exec-2] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 16:10:17.895  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:15:17.909  INFO [organizationservice,,] 4274 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:18:41.284  INFO [organizationservice,,] 4274 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORGANIZATIONSERVICE with eureka with status DOWN
+"2022-05-10 16:18:41.285  INFO [organizationservice,,] 4274 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652170721285, current=DOWN, previous=UP]
+"2022-05-10 16:18:41.285  INFO [organizationservice,,] 4274 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+"2022-05-10 16:18:41.297  INFO [organizationservice,,] 4274 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+"2022-05-10 16:18:41.344  INFO [organizationservice,,] 4274 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+"2022-05-10 16:18:41.357  INFO [organizationservice,,] 4274 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+"2022-05-10 16:18:41.361  INFO [organizationservice,,] 4274 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+"2022-05-10 16:18:44.368  INFO [organizationservice,,] 4274 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+"2022-05-10 16:18:44.372  INFO [organizationservice,,] 4274 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - deregister  status: 200
+"2022-05-10 16:18:44.378  INFO [organizationservice,,] 4274 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+"2022-05-10 16:20:12.637  INFO [organizationservice,,] 17670 --- [main] i.g.y.c.o.OrganizationserviceApplication : Starting OrganizationserviceApplication using Java 1.8.0_192 on yangyidiandeMacBook-Pro.local with PID 17670 (/Users/yangyidian/code/github/yydzxz/cloud-parent/organizationservice/target/classes started by yangyidian in /Users/yangyidian/code/github/yydzxz/cloud-parent)
+"2022-05-10 16:20:12.641 DEBUG [organizationservice,,] 17670 --- [main] i.g.y.c.o.OrganizationserviceApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+"2022-05-10 16:20:12.641  INFO [organizationservice,,] 17670 --- [main] i.g.y.c.o.OrganizationserviceApplication : The following 1 profile is active: "study"
+"2022-05-10 16:20:12.674  INFO [organizationservice,,] 17670 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:10001
+"2022-05-10 16:20:12.675  INFO [organizationservice,,] 17670 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=organizationservice, profiles=[study], label=null, version=3b1027b3d73e5d1d5dc847334a689decb97e87e9, state=null
+"2022-05-10 16:20:13.580  INFO [organizationservice,,] 17670 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=73ef3d08-2ba2-36de-943f-0523714bf661
+"2022-05-10 16:20:14.161  INFO [organizationservice,,] 17670 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10201 (http)
+"2022-05-10 16:20:14.168  INFO [organizationservice,,] 17670 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+"2022-05-10 16:20:14.169  INFO [organizationservice,,] 17670 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+"2022-05-10 16:20:14.273  INFO [organizationservice,,] 17670 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+"2022-05-10 16:20:14.274  INFO [organizationservice,,] 17670 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1598 ms
+"2022-05-10 16:20:15.966  INFO [organizationservice,,] 17670 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+"2022-05-10 16:20:16.099  WARN [organizationservice,,] 17670 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+"2022-05-10 16:20:16.233  INFO [organizationservice,,] 17670 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+"2022-05-10 16:20:16.264  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+"2022-05-10 16:20:16.268  INFO [organizationservice,,] 17670 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:20:16.284  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+"2022-05-10 16:20:16.284  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+"2022-05-10 16:20:16.285  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+"2022-05-10 16:20:16.285  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+"2022-05-10 16:20:16.285  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+"2022-05-10 16:20:16.285  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+"2022-05-10 16:20:16.285  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+"2022-05-10 16:20:16.499  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+"2022-05-10 16:20:16.502  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+"2022-05-10 16:20:16.508  INFO [organizationservice,,] 17670 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+"2022-05-10 16:20:16.514  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1652170816513 with initial instances count: 5
+"2022-05-10 16:20:16.522  INFO [organizationservice,,] 17670 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORGANIZATIONSERVICE with eureka with status UP
+"2022-05-10 16:20:16.523  INFO [organizationservice,,] 17670 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652170816523, current=UP, previous=STARTING]
+"2022-05-10 16:20:16.527  INFO [organizationservice,,] 17670 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+"2022-05-10 16:20:16.574  INFO [organizationservice,,] 17670 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10201 (http) with context path ''
+"2022-05-10 16:20:16.576  INFO [organizationservice,,] 17670 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 10201
+"2022-05-10 16:20:16.593  INFO [organizationservice,,] 17670 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+"2022-05-10 16:20:16.635  INFO [organizationservice,,] 17670 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10202 (http)
+"2022-05-10 16:20:16.636  INFO [organizationservice,,] 17670 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+"2022-05-10 16:20:16.636  INFO [organizationservice,,] 17670 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+"2022-05-10 16:20:16.643  INFO [organizationservice,,] 17670 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+"2022-05-10 16:20:16.643  INFO [organizationservice,,] 17670 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 61 ms
+"2022-05-10 16:20:16.651  INFO [organizationservice,,] 17670 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+"2022-05-10 16:20:16.686  INFO [organizationservice,,] 17670 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10202 (http) with context path ''
+"2022-05-10 16:20:16.711  INFO [organizationservice,,] 17670 --- [main] i.g.y.c.o.OrganizationserviceApplication : Started OrganizationserviceApplication in 9.722 seconds (JVM running for 10.316)
+"2022-05-10 16:20:17.031  INFO [organizationservice,,] 17670 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+"2022-05-10 16:20:17.031  INFO [organizationservice,,] 17670 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+"2022-05-10 16:20:17.032  INFO [organizationservice,,] 17670 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+"2022-05-10 16:20:17.034  INFO [organizationservice,,] 17670 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+"2022-05-10 16:20:17.386  INFO [organizationservice,,] 17670 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+"2022-05-10 16:25:16.300  INFO [organizationservice,,] 17670 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:30:16.317  INFO [organizationservice,,] 17670 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:35:16.285  INFO [organizationservice,,] 17670 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:36:50.529 DEBUG [organizationservice,7ed59721927360d7,7ed59721927360d7] 17670 --- [http-nio-10201-exec-1] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 16:36:57.272 DEBUG [organizationservice,612aafe8c45083df,612aafe8c45083df] 17670 --- [http-nio-10201-exec-2] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 16:37:22.390 DEBUG [organizationservice,9853f91fa31b740b,9853f91fa31b740b] 17670 --- [http-nio-10201-exec-3] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 16:39:23.253 DEBUG [organizationservice,7fe3fa74ee713594,51ea958889bb69b9] 17670 --- [http-nio-10201-exec-5] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 16:39:44.362 DEBUG [organizationservice,aecefbe46f364b01,8e64d072c698fdec] 17670 --- [http-nio-10201-exec-6] i.g.y.c.o.controller.HelloController     : organizationservice debug
+"2022-05-10 16:40:16.297  INFO [organizationservice,,] 17670 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:45:16.307  INFO [organizationservice,,] 17670 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:50:16.336  INFO [organizationservice,,] 17670 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:55:16.389  INFO [organizationservice,,] 17670 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"2022-05-10 16:55:59.584  INFO [organizationservice,,] 17670 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORGANIZATIONSERVICE with eureka with status DOWN
+"2022-05-10 16:55:59.594  INFO [organizationservice,,] 17670 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652172959594, current=DOWN, previous=UP]
+"2022-05-10 16:55:59.598  INFO [organizationservice,,] 17670 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+"2022-05-10 16:55:59.817  INFO [organizationservice,,] 17670 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+"2022-05-10 16:56:00.547  INFO [organizationservice,,] 17670 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+"2022-05-10 16:56:00.709  INFO [organizationservice,,] 17670 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+"2022-05-10 16:56:00.742  INFO [organizationservice,,] 17670 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+"2022-05-10 16:56:03.944  INFO [organizationservice,,] 17670 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+"2022-05-10 16:56:04.069  INFO [organizationservice,,] 17670 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - deregister  status: 200
+"2022-05-10 16:56:04.096  INFO [organizationservice,,] 17670 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+""2022-05-10 17:02:46.308  INFO [organizationservice,,] 26594 --- [main] i.g.y.c.o.OrganizationserviceApplication : Starting OrganizationserviceApplication using Java 1.8.0_192 on yangyidiandeMacBook-Pro.local with PID 26594 (/Users/yangyidian/code/github/yydzxz/cloud-parent/organizationservice/target/classes started by yangyidian in /Users/yangyidian/code/github/yydzxz/cloud-parent)
+""2022-05-10 17:02:46.315 DEBUG [organizationservice,,] 26594 --- [main] i.g.y.c.o.OrganizationserviceApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+""2022-05-10 17:02:46.316  INFO [organizationservice,,] 26594 --- [main] i.g.y.c.o.OrganizationserviceApplication : The following 1 profile is active: "study"
+""2022-05-10 17:02:46.436  INFO [organizationservice,,] 26594 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:10001
+""2022-05-10 17:02:46.437  INFO [organizationservice,,] 26594 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=organizationservice, profiles=[study], label=null, version=0c9ba202699b149f14754ff832c1dccc09e24365, state=null
+""2022-05-10 17:02:49.649  INFO [organizationservice,,] 26594 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a486f4f-a91d-39d4-9035-181fc94854f1
+""2022-05-10 17:02:50.987  INFO [organizationservice,,] 26594 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10201 (http)
+""2022-05-10 17:02:51.004  INFO [organizationservice,,] 26594 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 17:02:51.004  INFO [organizationservice,,] 26594 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 17:02:51.221  INFO [organizationservice,,] 26594 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+""2022-05-10 17:02:51.221  INFO [organizationservice,,] 26594 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4770 ms
+""2022-05-10 17:02:54.699  INFO [organizationservice,,] 26594 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+""2022-05-10 17:02:54.984  WARN [organizationservice,,] 26594 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+""2022-05-10 17:02:55.202  INFO [organizationservice,,] 26594 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+""2022-05-10 17:02:55.258  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+""2022-05-10 17:02:55.267  INFO [organizationservice,,] 26594 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:02:55.295  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+""2022-05-10 17:02:55.296  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+""2022-05-10 17:02:55.296  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+""2022-05-10 17:02:55.296  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+""2022-05-10 17:02:55.296  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+""2022-05-10 17:02:55.296  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+""2022-05-10 17:02:55.296  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+""2022-05-10 17:02:55.708  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+""2022-05-10 17:02:55.713  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+""2022-05-10 17:02:55.718  INFO [organizationservice,,] 26594 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2022-05-10 17:02:55.724  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1652173375723 with initial instances count: 4
+""2022-05-10 17:02:55.733  INFO [organizationservice,,] 26594 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORGANIZATIONSERVICE with eureka with status UP
+""2022-05-10 17:02:55.734  INFO [organizationservice,,] 26594 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652173375734, current=UP, previous=STARTING]
+""2022-05-10 17:02:55.737  INFO [organizationservice,,] 26594 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+""2022-05-10 17:02:55.783  INFO [organizationservice,,] 26594 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10201 (http) with context path ''
+""2022-05-10 17:02:55.784  INFO [organizationservice,,] 26594 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 10201
+""2022-05-10 17:02:55.828  INFO [organizationservice,,] 26594 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+""2022-05-10 17:02:55.894  INFO [organizationservice,,] 26594 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10202 (http)
+""2022-05-10 17:02:55.895  INFO [organizationservice,,] 26594 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 17:02:55.895  INFO [organizationservice,,] 26594 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 17:02:55.911  INFO [organizationservice,,] 26594 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+""2022-05-10 17:02:55.911  INFO [organizationservice,,] 26594 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 119 ms
+""2022-05-10 17:02:55.935  INFO [organizationservice,,] 26594 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+""2022-05-10 17:02:55.997  INFO [organizationservice,,] 26594 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10202 (http) with context path ''
+""2022-05-10 17:02:56.040  INFO [organizationservice,,] 26594 --- [main] i.g.y.c.o.OrganizationserviceApplication : Started OrganizationserviceApplication in 17.871 seconds (JVM running for 19.256)
+""2022-05-10 17:02:56.435  INFO [organizationservice,,] 26594 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-05-10 17:02:56.435  INFO [organizationservice,,] 26594 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+""2022-05-10 17:02:56.436  INFO [organizationservice,,] 26594 --- [RMI TCP Connection(1)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+""2022-05-10 17:02:56.440  INFO [organizationservice,,] 26594 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+""2022-05-10 17:02:57.248  INFO [organizationservice,,] 26594 --- [RMI TCP Connection(1)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+""2022-05-10 17:04:10.993 DEBUG [organizationservice,b7732630519a18c9,d2ef19ea9eb73d0f] 26594 --- [http-nio-10201-exec-1] i.g.y.c.o.controller.HelloController     : organizationservice debug
+""2022-05-10 17:07:55.315  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:12:55.338  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:17:55.355  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:22:55.367  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:27:55.385  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:32:55.397  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:37:55.413  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:42:55.431  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:47:55.467  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:52:55.498  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 17:57:55.516  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:02:55.543  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:07:55.595  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:12:55.714  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:17:55.922  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:22:55.976  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:27:55.992  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:32:56.006  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:37:56.031  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:42:56.043  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:47:56.079  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:52:56.103  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 18:57:56.120  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:02:56.147  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:07:56.191  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:12:56.269  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:17:56.301  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:22:56.331  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:27:56.346  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:32:56.366  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:37:56.385  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:42:56.391  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:47:56.415  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:52:56.438  INFO [organizationservice,,] 26594 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:56:06.746  INFO [organizationservice,,] 26594 --- [Thread-28] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+""2022-05-10 19:56:06.887  INFO [organizationservice,,] 26594 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORGANIZATIONSERVICE with eureka with status DOWN
+""2022-05-10 19:56:06.890  INFO [organizationservice,,] 26594 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652183766890, current=DOWN, previous=UP]
+""2022-05-10 19:56:06.910  INFO [organizationservice,,] 26594 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+""2022-05-10 19:56:06.984  INFO [organizationservice,,] 26594 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+""2022-05-10 19:56:08.220  INFO [organizationservice,,] 26594 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+""2022-05-10 19:56:08.305  INFO [organizationservice,,] 26594 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+""2022-05-10 19:56:08.338  INFO [organizationservice,,] 26594 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+""2022-05-10 19:56:11.355  INFO [organizationservice,,] 26594 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+""2022-05-10 19:56:11.368  INFO [organizationservice,,] 26594 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - deregister  status: 200
+""2022-05-10 19:56:11.407  INFO [organizationservice,,] 26594 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+""2022-05-10 19:57:10.670  INFO [organizationservice,,] 63441 --- [main] i.g.y.c.o.OrganizationserviceApplication : Starting OrganizationserviceApplication using Java 1.8.0_192 on yangyidiandeMacBook-Pro.local with PID 63441 (/Users/yangyidian/code/github/yydzxz/cloud-parent/organizationservice/target/classes started by yangyidian in /Users/yangyidian/code/github/yydzxz/cloud-parent)
+""2022-05-10 19:57:10.675 DEBUG [organizationservice,,] 63441 --- [main] i.g.y.c.o.OrganizationserviceApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+""2022-05-10 19:57:10.675  INFO [organizationservice,,] 63441 --- [main] i.g.y.c.o.OrganizationserviceApplication : The following 1 profile is active: "study"
+""2022-05-10 19:57:10.742  INFO [organizationservice,,] 63441 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:10001
+""2022-05-10 19:57:10.742  INFO [organizationservice,,] 63441 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=organizationservice, profiles=[study], label=null, version=0c9ba202699b149f14754ff832c1dccc09e24365, state=null
+""2022-05-10 19:57:12.442  INFO [organizationservice,,] 63441 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a486f4f-a91d-39d4-9035-181fc94854f1
+""2022-05-10 19:57:13.679  INFO [organizationservice,,] 63441 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10201 (http)
+""2022-05-10 19:57:13.693  INFO [organizationservice,,] 63441 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 19:57:13.693  INFO [organizationservice,,] 63441 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 19:57:13.908  INFO [organizationservice,,] 63441 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+""2022-05-10 19:57:13.909  INFO [organizationservice,,] 63441 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3165 ms
+""2022-05-10 19:57:17.247  INFO [organizationservice,,] 63441 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+""2022-05-10 19:57:17.423  WARN [organizationservice,,] 63441 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+""2022-05-10 19:57:17.620  INFO [organizationservice,,] 63441 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+""2022-05-10 19:57:17.683  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+""2022-05-10 19:57:17.694  INFO [organizationservice,,] 63441 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 19:57:17.724  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+""2022-05-10 19:57:17.724  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+""2022-05-10 19:57:17.724  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+""2022-05-10 19:57:17.724  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+""2022-05-10 19:57:17.724  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+""2022-05-10 19:57:17.724  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+""2022-05-10 19:57:17.724  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+""2022-05-10 19:57:18.052  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+""2022-05-10 19:57:18.056  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+""2022-05-10 19:57:18.059  INFO [organizationservice,,] 63441 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2022-05-10 19:57:18.073  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1652183838070 with initial instances count: 3
+""2022-05-10 19:57:18.087  INFO [organizationservice,,] 63441 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORGANIZATIONSERVICE with eureka with status UP
+""2022-05-10 19:57:18.088  INFO [organizationservice,,] 63441 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652183838088, current=UP, previous=STARTING]
+""2022-05-10 19:57:18.092  INFO [organizationservice,,] 63441 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+""2022-05-10 19:57:18.167  INFO [organizationservice,,] 63441 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10201 (http) with context path ''
+""2022-05-10 19:57:18.170  INFO [organizationservice,,] 63441 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 10201
+""2022-05-10 19:57:18.224  INFO [organizationservice,,] 63441 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+""2022-05-10 19:57:18.276  INFO [organizationservice,,] 63441 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10202 (http)
+""2022-05-10 19:57:18.277  INFO [organizationservice,,] 63441 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 19:57:18.278  INFO [organizationservice,,] 63441 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 19:57:18.292  INFO [organizationservice,,] 63441 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+""2022-05-10 19:57:18.292  INFO [organizationservice,,] 63441 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 111 ms
+""2022-05-10 19:57:18.312  INFO [organizationservice,,] 63441 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+""2022-05-10 19:57:18.381  INFO [organizationservice,,] 63441 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10202 (http) with context path ''
+""2022-05-10 19:57:18.429  INFO [organizationservice,,] 63441 --- [main] i.g.y.c.o.OrganizationserviceApplication : Started OrganizationserviceApplication in 15.05 seconds (JVM running for 16.03)
+""2022-05-10 19:57:18.661  INFO [organizationservice,,] 63441 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-05-10 19:57:18.661  INFO [organizationservice,,] 63441 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+""2022-05-10 19:57:18.663  INFO [organizationservice,,] 63441 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+""2022-05-10 19:57:18.665  INFO [organizationservice,,] 63441 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+""2022-05-10 19:57:19.315  INFO [organizationservice,,] 63441 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+""2022-05-10 20:01:46.877 DEBUG [organizationservice,adaee18142d644eb,c1bab0b7c1e07716] 63441 --- [http-nio-10201-exec-1] i.g.y.c.o.controller.HelloController     : organizationservice debug
+""2022-05-10 20:02:17.744  INFO [organizationservice,,] 63441 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 20:04:24.963  INFO [organizationservice,,] 63441 --- [Thread-23] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+""2022-05-10 20:04:24.993  INFO [organizationservice,,] 63441 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORGANIZATIONSERVICE with eureka with status DOWN
+""2022-05-10 20:04:24.995  INFO [organizationservice,,] 63441 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652184264995, current=DOWN, previous=UP]
+""2022-05-10 20:04:24.997  INFO [organizationservice,,] 63441 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+""2022-05-10 20:04:25.027  INFO [organizationservice,,] 63441 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+""2022-05-10 20:04:25.183  INFO [organizationservice,,] 63441 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+""2022-05-10 20:04:25.228  INFO [organizationservice,,] 63441 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+""2022-05-10 20:04:25.588  INFO [organizationservice,,] 63441 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+""2022-05-10 20:04:28.600  INFO [organizationservice,,] 63441 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+""2022-05-10 20:04:28.609  INFO [organizationservice,,] 63441 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - deregister  status: 200
+""2022-05-10 20:04:28.619  INFO [organizationservice,,] 63441 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+""2022-05-10 20:04:36.284  INFO [organizationservice,,] 64987 --- [main] i.g.y.c.o.OrganizationserviceApplication : Starting OrganizationserviceApplication using Java 1.8.0_192 on yangyidiandeMacBook-Pro.local with PID 64987 (/Users/yangyidian/code/github/yydzxz/cloud-parent/organizationservice/target/classes started by yangyidian in /Users/yangyidian/code/github/yydzxz/cloud-parent)
+""2022-05-10 20:04:36.287 DEBUG [organizationservice,,] 64987 --- [main] i.g.y.c.o.OrganizationserviceApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+""2022-05-10 20:04:36.288  INFO [organizationservice,,] 64987 --- [main] i.g.y.c.o.OrganizationserviceApplication : The following 1 profile is active: "study"
+""2022-05-10 20:04:36.334  INFO [organizationservice,,] 64987 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:10001
+""2022-05-10 20:04:36.334  INFO [organizationservice,,] 64987 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=organizationservice, profiles=[study], label=null, version=0c9ba202699b149f14754ff832c1dccc09e24365, state=null
+""2022-05-10 20:04:37.459  INFO [organizationservice,,] 64987 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a486f4f-a91d-39d4-9035-181fc94854f1
+""2022-05-10 20:04:38.314  INFO [organizationservice,,] 64987 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10201 (http)
+""2022-05-10 20:04:38.324  INFO [organizationservice,,] 64987 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 20:04:38.324  INFO [organizationservice,,] 64987 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 20:04:38.470  INFO [organizationservice,,] 64987 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+""2022-05-10 20:04:38.471  INFO [organizationservice,,] 64987 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2135 ms
+""2022-05-10 20:04:40.668  INFO [organizationservice,,] 64987 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+""2022-05-10 20:04:40.812  WARN [organizationservice,,] 64987 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+""2022-05-10 20:04:40.969  INFO [organizationservice,,] 64987 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+""2022-05-10 20:04:41.001  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+""2022-05-10 20:04:41.005  INFO [organizationservice,,] 64987 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 20:04:41.024  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+""2022-05-10 20:04:41.025  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+""2022-05-10 20:04:41.025  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+""2022-05-10 20:04:41.025  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+""2022-05-10 20:04:41.025  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+""2022-05-10 20:04:41.025  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+""2022-05-10 20:04:41.025  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+""2022-05-10 20:04:41.317  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+""2022-05-10 20:04:41.321  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+""2022-05-10 20:04:41.324  INFO [organizationservice,,] 64987 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2022-05-10 20:04:41.329  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1652184281328 with initial instances count: 5
+""2022-05-10 20:04:41.337  INFO [organizationservice,,] 64987 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORGANIZATIONSERVICE with eureka with status UP
+""2022-05-10 20:04:41.338  INFO [organizationservice,,] 64987 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652184281338, current=UP, previous=STARTING]
+""2022-05-10 20:04:41.340  INFO [organizationservice,,] 64987 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+""2022-05-10 20:04:41.371  INFO [organizationservice,,] 64987 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10201 (http) with context path ''
+""2022-05-10 20:04:41.372  INFO [organizationservice,,] 64987 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 10201
+""2022-05-10 20:04:41.407  INFO [organizationservice,,] 64987 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+""2022-05-10 20:04:41.444  INFO [organizationservice,,] 64987 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10202 (http)
+""2022-05-10 20:04:41.445  INFO [organizationservice,,] 64987 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 20:04:41.445  INFO [organizationservice,,] 64987 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 20:04:41.454  INFO [organizationservice,,] 64987 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+""2022-05-10 20:04:41.454  INFO [organizationservice,,] 64987 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 76 ms
+""2022-05-10 20:04:41.465  INFO [organizationservice,,] 64987 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+""2022-05-10 20:04:41.507  INFO [organizationservice,,] 64987 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10202 (http) with context path ''
+""2022-05-10 20:04:41.539  INFO [organizationservice,,] 64987 --- [main] i.g.y.c.o.OrganizationserviceApplication : Started OrganizationserviceApplication in 10.317 seconds (JVM running for 11.178)
+""2022-05-10 20:04:41.681  INFO [organizationservice,,] 64987 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-05-10 20:04:41.681  INFO [organizationservice,,] 64987 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+""2022-05-10 20:04:41.681  INFO [organizationservice,,] 64987 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+""2022-05-10 20:04:41.684  INFO [organizationservice,,] 64987 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+""2022-05-10 20:04:42.200  INFO [organizationservice,,] 64987 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+""2022-05-10 20:08:42.219 DEBUG [organizationservice,11b504fd76df230b,4062b841ec425da5] 64987 --- [http-nio-10201-exec-1] i.g.y.c.o.controller.HelloController     : organizationservice debug
+""2022-05-10 20:09:41.045  INFO [organizationservice,,] 64987 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 20:12:47.754  INFO [organizationservice,,] 64987 --- [Thread-17] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+""2022-05-10 20:12:47.832  INFO [organizationservice,,] 64987 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORGANIZATIONSERVICE with eureka with status DOWN
+""2022-05-10 20:12:47.833  INFO [organizationservice,,] 64987 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652184767833, current=DOWN, previous=UP]
+""2022-05-10 20:12:47.835  INFO [organizationservice,,] 64987 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+""2022-05-10 20:12:47.894  INFO [organizationservice,,] 64987 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+""2022-05-10 20:12:48.151  INFO [organizationservice,,] 64987 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+""2022-05-10 20:12:48.191  INFO [organizationservice,,] 64987 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+""2022-05-10 20:12:48.287  INFO [organizationservice,,] 64987 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+""2022-05-10 20:12:51.310  INFO [organizationservice,,] 64987 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+""2022-05-10 20:12:51.327  INFO [organizationservice,,] 64987 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - deregister  status: 200
+""2022-05-10 20:12:51.396  INFO [organizationservice,,] 64987 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+""2022-05-10 20:13:24.849  INFO [organizationservice,,] 66880 --- [main] i.g.y.c.o.OrganizationserviceApplication : Starting OrganizationserviceApplication using Java 1.8.0_192 on yangyidiandeMacBook-Pro.local with PID 66880 (/Users/yangyidian/code/github/yydzxz/cloud-parent/organizationservice/target/classes started by yangyidian in /Users/yangyidian/code/github/yydzxz/cloud-parent)
+""2022-05-10 20:13:24.853 DEBUG [organizationservice,,] 66880 --- [main] i.g.y.c.o.OrganizationserviceApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+""2022-05-10 20:13:24.854  INFO [organizationservice,,] 66880 --- [main] i.g.y.c.o.OrganizationserviceApplication : The following 1 profile is active: "study"
+""2022-05-10 20:13:24.917  INFO [organizationservice,,] 66880 --- [main] o.s.b.context.config.ConfigDataLoader    : Fetching config from server at : http://localhost:10001
+""2022-05-10 20:13:24.918  INFO [organizationservice,,] 66880 --- [main] o.s.b.context.config.ConfigDataLoader    : Located environment: name=organizationservice, profiles=[study], label=null, version=0c9ba202699b149f14754ff832c1dccc09e24365, state=null
+""2022-05-10 20:13:26.729  INFO [organizationservice,,] 66880 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a486f4f-a91d-39d4-9035-181fc94854f1
+""2022-05-10 20:13:27.586  INFO [organizationservice,,] 66880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10201 (http)
+""2022-05-10 20:13:27.595  INFO [organizationservice,,] 66880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 20:13:27.595  INFO [organizationservice,,] 66880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 20:13:27.711  INFO [organizationservice,,] 66880 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+""2022-05-10 20:13:27.711  INFO [organizationservice,,] 66880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2791 ms
+""2022-05-10 20:13:29.746  INFO [organizationservice,,] 66880 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+""2022-05-10 20:13:29.904  WARN [organizationservice,,] 66880 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+""2022-05-10 20:13:30.059  INFO [organizationservice,,] 66880 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+""2022-05-10 20:13:30.095  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+""2022-05-10 20:13:30.101  INFO [organizationservice,,] 66880 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 20:13:30.143  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+""2022-05-10 20:13:30.144  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+""2022-05-10 20:13:30.144  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+""2022-05-10 20:13:30.144  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+""2022-05-10 20:13:30.144  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+""2022-05-10 20:13:30.144  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+""2022-05-10 20:13:30.144  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+""2022-05-10 20:13:30.353  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+""2022-05-10 20:13:30.360  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+""2022-05-10 20:13:30.367  INFO [organizationservice,,] 66880 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2022-05-10 20:13:30.379  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1652184810377 with initial instances count: 3
+""2022-05-10 20:13:30.398  INFO [organizationservice,,] 66880 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORGANIZATIONSERVICE with eureka with status UP
+""2022-05-10 20:13:30.400  INFO [organizationservice,,] 66880 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652184810400, current=UP, previous=STARTING]
+""2022-05-10 20:13:30.406  INFO [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+""2022-05-10 20:13:30.458  INFO [organizationservice,,] 66880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10201 (http) with context path ''
+""2022-05-10 20:13:30.459  INFO [organizationservice,,] 66880 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 10201
+""2022-05-10 20:13:30.511  INFO [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+""2022-05-10 20:13:30.603  INFO [organizationservice,,] 66880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10202 (http)
+""2022-05-10 20:13:30.606  INFO [organizationservice,,] 66880 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 20:13:30.607  INFO [organizationservice,,] 66880 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 20:13:30.643  INFO [organizationservice,,] 66880 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+""2022-05-10 20:13:30.643  INFO [organizationservice,,] 66880 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 177 ms
+""2022-05-10 20:13:30.669  INFO [organizationservice,,] 66880 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+""2022-05-10 20:13:30.761  INFO [organizationservice,,] 66880 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10202 (http) with context path ''
+""2022-05-10 20:13:30.838  INFO [organizationservice,,] 66880 --- [main] i.g.y.c.o.OrganizationserviceApplication : Started OrganizationserviceApplication in 11.874 seconds (JVM running for 12.76)
+""2022-05-10 20:13:30.945  INFO [organizationservice,,] 66880 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-05-10 20:13:30.945  INFO [organizationservice,,] 66880 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+""2022-05-10 20:13:30.946  INFO [organizationservice,,] 66880 --- [RMI TCP Connection(1)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+""2022-05-10 20:13:30.948  INFO [organizationservice,,] 66880 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+""2022-05-10 20:13:31.544  INFO [organizationservice,,] 66880 --- [RMI TCP Connection(1)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+""2022-05-10 20:14:30.399 DEBUG [organizationservice,2487b7b789f29cce,1061500cb2d21c3a] 66880 --- [http-nio-10201-exec-1] i.g.y.c.o.controller.HelloController     : organizationservice debug
+""2022-05-10 20:16:53.188  INFO [organizationservice,,] 66880 --- [Thread-20] o.s.c.s.a.z.ZipkinAutoConfiguration      : Flushing remaining spans on shutdown
+""2022-05-10 20:16:53.274  INFO [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORGANIZATIONSERVICE with eureka with status DOWN
+""2022-05-10 20:16:53.278  INFO [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652185013277, current=DOWN, previous=UP]
+""2022-05-10 20:16:53.284  INFO [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+""2022-05-10 20:16:53.636  INFO [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:10011/eureka/} exception=I/O error on POST request for "http://localhost:10011/eureka/apps/ORGANIZATIONSERVICE": Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:10011/eureka/apps/ORGANIZATIONSERVICE": Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 23 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 36 more
+
+""2022-05-10 20:16:53.656  WARN [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:10011/eureka/apps/ORGANIZATIONSERVICE": Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+""2022-05-10 20:16:53.884  INFO [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:10011/eureka/}, exception=I/O error on POST request for "http://localhost:10011/eureka/apps/ORGANIZATIONSERVICE": Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:10011/eureka/apps/ORGANIZATIONSERVICE": Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 37 more
+
+""2022-05-10 20:16:53.902  WARN [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://localhost:10011/eureka/apps/ORGANIZATIONSERVICE": Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+""2022-05-10 20:16:53.904  INFO [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+""2022-05-10 20:16:54.021  INFO [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+""2022-05-10 20:16:54.024  INFO [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:10012/eureka/}, exception=I/O error on POST request for "http://127.0.0.1:10012/eureka/apps/ORGANIZATIONSERVICE": Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://127.0.0.1:10012/eureka/apps/ORGANIZATIONSERVICE": Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 24 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 37 more
+
+""2022-05-10 20:16:54.032  WARN [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on POST request for "http://127.0.0.1:10012/eureka/apps/ORGANIZATIONSERVICE": Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused)
+""2022-05-10 20:16:54.052  WARN [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration failed Retry limit reached; giving up on completing the request
+
+com.netflix.discovery.shared.transport.TransportException: Retry limit reached; giving up on completing the request
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:139)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+""2022-05-10 20:16:54.061  WARN [organizationservice,,] 66880 --- [DiscoveryClient-InstanceInfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+
+com.netflix.discovery.shared.transport.TransportException: Retry limit reached; giving up on completing the request
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:139)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+""2022-05-10 20:16:54.248  INFO [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+""2022-05-10 20:16:57.336  INFO [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+""2022-05-10 20:16:57.686  INFO [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:10011/eureka/}, exception=I/O error on DELETE request for "http://localhost:10011/eureka/apps/ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201": Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://localhost:10011/eureka/apps/ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201": Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 53 more
+
+""2022-05-10 20:16:57.688  WARN [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://localhost:10011/eureka/apps/ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201": Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to localhost:10011 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused (Connection refused)
+""2022-05-10 20:16:57.707  INFO [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://127.0.0.1:10012/eureka/}, exception=I/O error on DELETE request for "http://127.0.0.1:10012/eureka/apps/ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201": Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused) stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://127.0.0.1:10012/eureka/apps/ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201": Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 40 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 53 more
+
+""2022-05-10 20:16:57.709  WARN [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: I/O error on DELETE request for "http://127.0.0.1:10012/eureka/apps/ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201": Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused); nested exception is org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:10012 [/127.0.0.1] failed: Connection refused (Connection refused)
+""2022-05-10 20:16:57.710 ERROR [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.lang.Thread.run(Thread.java:748)
+
+""2022-05-10 20:16:57.730  INFO [organizationservice,,] 66880 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+""2022-05-10 20:17:58.474  INFO [organizationservice,,] 67805 --- [main] i.g.y.c.o.OrganizationserviceApplication : Starting OrganizationserviceApplication using Java 1.8.0_192 on yangyidiandeMacBook-Pro.local with PID 67805 (/Users/yangyidian/code/github/yydzxz/cloud-parent/organizationservice/target/classes started by yangyidian in /Users/yangyidian/code/github/yydzxz/cloud-parent)
+""2022-05-10 20:17:58.478 DEBUG [organizationservice,,] 67805 --- [main] i.g.y.c.o.OrganizationserviceApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+""2022-05-10 20:17:58.479  INFO [organizationservice,,] 67805 --- [main] i.g.y.c.o.OrganizationserviceApplication : The following 1 profile is active: "study"
+""2022-05-10 20:17:58.553  INFO [organizationservice,,] 67805 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:10001
+""2022-05-10 20:17:58.554  INFO [organizationservice,,] 67805 --- [main] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=organizationservice, profiles=[study], label=null, version=0c9ba202699b149f14754ff832c1dccc09e24365, state=null
+""2022-05-10 20:18:00.579  INFO [organizationservice,,] 67805 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6a486f4f-a91d-39d4-9035-181fc94854f1
+""2022-05-10 20:18:01.432  INFO [organizationservice,,] 67805 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10201 (http)
+""2022-05-10 20:18:01.445  INFO [organizationservice,,] 67805 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 20:18:01.446  INFO [organizationservice,,] 67805 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 20:18:01.604  INFO [organizationservice,,] 67805 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+""2022-05-10 20:18:01.605  INFO [organizationservice,,] 67805 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3048 ms
+""2022-05-10 20:18:04.164  INFO [organizationservice,,] 67805 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+""2022-05-10 20:18:04.367  WARN [organizationservice,,] 67805 --- [main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+""2022-05-10 20:18:04.605  INFO [organizationservice,,] 67805 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+""2022-05-10 20:18:04.645  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+""2022-05-10 20:18:04.653  INFO [organizationservice,,] 67805 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 20:18:04.685  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+""2022-05-10 20:18:04.685  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+""2022-05-10 20:18:04.685  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+""2022-05-10 20:18:04.685  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+""2022-05-10 20:18:04.685  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+""2022-05-10 20:18:04.686  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+""2022-05-10 20:18:04.686  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+""2022-05-10 20:18:05.009  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+""2022-05-10 20:18:05.013  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+""2022-05-10 20:18:05.015  INFO [organizationservice,,] 67805 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+""2022-05-10 20:18:05.021  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1652185085020 with initial instances count: 3
+""2022-05-10 20:18:05.030  INFO [organizationservice,,] 67805 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORGANIZATIONSERVICE with eureka with status UP
+""2022-05-10 20:18:05.031  INFO [organizationservice,,] 67805 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1652185085031, current=UP, previous=STARTING]
+""2022-05-10 20:18:05.034  INFO [organizationservice,,] 67805 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201: registering service...
+""2022-05-10 20:18:05.071  INFO [organizationservice,,] 67805 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10201 (http) with context path ''
+""2022-05-10 20:18:05.072  INFO [organizationservice,,] 67805 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 10201
+""2022-05-10 20:18:05.094  INFO [organizationservice,,] 67805 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORGANIZATIONSERVICE/192.168.0.106:organizationservice:10201 - registration status: 204
+""2022-05-10 20:18:05.147  INFO [organizationservice,,] 67805 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10202 (http)
+""2022-05-10 20:18:05.148  INFO [organizationservice,,] 67805 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+""2022-05-10 20:18:05.148  INFO [organizationservice,,] 67805 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+""2022-05-10 20:18:05.158  INFO [organizationservice,,] 67805 --- [main] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+""2022-05-10 20:18:05.158  INFO [organizationservice,,] 67805 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 80 ms
+""2022-05-10 20:18:05.176  INFO [organizationservice,,] 67805 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+""2022-05-10 20:18:05.247  INFO [organizationservice,,] 67805 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10202 (http) with context path ''
+""2022-05-10 20:18:05.289  INFO [organizationservice,,] 67805 --- [main] i.g.y.c.o.OrganizationserviceApplication : Started OrganizationserviceApplication in 12.827 seconds (JVM running for 13.824)
+""2022-05-10 20:18:05.623  INFO [organizationservice,,] 67805 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2022-05-10 20:18:05.624  INFO [organizationservice,,] 67805 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+""2022-05-10 20:18:05.625  INFO [organizationservice,,] 67805 --- [RMI TCP Connection(1)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+""2022-05-10 20:18:05.629  INFO [organizationservice,,] 67805 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+""2022-05-10 20:18:06.453  INFO [organizationservice,,] 67805 --- [RMI TCP Connection(1)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+""2022-05-10 20:20:15.491 DEBUG [organizationservice,539d36cc562b3d46,1939a5e20a878a1f] 67805 --- [http-nio-10201-exec-1] i.g.y.c.o.controller.HelloController     : organizationservice debug
+""2022-05-10 20:20:24.174 DEBUG [organizationservice,596b78013368603f,f0038b1784895517] 67805 --- [http-nio-10201-exec-2] i.g.y.c.o.controller.HelloController     : organizationservice debug
+""2022-05-10 20:21:59.793 DEBUG [organizationservice,072634a8dbb65162,8f04045ced18704e] 67805 --- [http-nio-10201-exec-5] i.g.y.c.o.controller.HelloController     : organizationservice debug
+""2022-05-10 20:22:33.904 DEBUG [organizationservice,9808f5ead0a197ac,7a8ff6ec5c28d97c] 67805 --- [http-nio-10201-exec-6] i.g.y.c.o.controller.HelloController     : organizationservice debug
+""2022-05-10 20:22:59.595 DEBUG [organizationservice,3dc7c12065487467,e203cd07d19d84fe] 67805 --- [http-nio-10201-exec-8] i.g.y.c.o.controller.HelloController     : organizationservice debug
+""2022-05-10 20:23:04.709  INFO [organizationservice,,] 67805 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 20:28:04.710  INFO [organizationservice,,] 67805 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 20:33:04.744  INFO [organizationservice,,] 67805 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+""2022-05-10 20:38:04.771  INFO [organizationservice,,] 67805 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+"

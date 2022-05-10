@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 10011
+eureka:
+  instance:
+    hostname: eureka10011
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka10012:10012/eureka
+  server:
+    #wait-time-in-ms-when-sync-empty: 5 #在服务器接收请求之前等待的初始时间,单位分钟
