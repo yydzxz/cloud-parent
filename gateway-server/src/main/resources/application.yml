@@ -1,14 +1,17 @@
 spring:
   application:
     name: gatewayserver
-  profiles:
-    active: study
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      profile: study
+      label: master
+      enabled: true
   config:
-    import: configserver:http://localhost:10001
-  zipkin:
-    base-url: http://127.0.0.1:9411/
-    sender:
-      type: web #传输方式，web,kafka...
-  sleuth:
-    sampler:
-      probability: 1.0 #收集数据百分比，默认0.1
+    import: optional:configserver:""
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10011/eureka,http://127.0.0.1:10012/eureka

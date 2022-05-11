@@ -11,6 +11,6 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka10011:10011/eureka
+      defaultZone: http://eureka10011:10011/eureka #其他eureka服务的地址
   server:
     #wait-time-in-ms-when-sync-empty: 5 #在服务器接收请求之前等待的初始时间,单位分钟

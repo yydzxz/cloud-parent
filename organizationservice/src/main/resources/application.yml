@@ -1,9 +1,22 @@
 spring:
   application:
     name: organizationservice
-  profiles:
-    active: study
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-server
+      profile: study
+      label: master
+      enabled: true
   config:
-    import: configserver:http://localhost:10001
+    import: optional:configserver:""
+#    import: configserver:http://localhost:10001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10011/eureka,http://127.0.0.1:10012/eureka
+
 logging:
   config: classpath:logback-spring.xml
+thisenv: ${myenv}

@@ -11,7 +11,7 @@ spring:
           uri: git@github.com:yydzxz/private-config.git
           searchPaths: '{application}'
           defaultLabel: master
-          basedir: /Users/yangyidian/code/cloud-config
+          basedir: ~/code/cloud-config-basedir
   application:
     name: config-server
 management:
