@@ -9,6 +9,8 @@ spring:
       profile: study
       label: master
       enabled: true
+      import-check:
+        enabled: false
   config:
     import: optional:configserver:""
 eureka:
