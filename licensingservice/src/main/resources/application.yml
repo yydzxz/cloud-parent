@@ -1,4 +1,4 @@
-cloud-host: 192.168.0.222
+eurekaHost: 192.168.0.222
 spring:
   application:
     name: licensingservice
@@ -16,7 +16,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://${cloud-host}:10011/eureka,http://${cloud-host}:10012/eureka
+      defaultZone: http://${eurekaHost}:10011/eureka,http://${eurekaHost}:10012/eureka
 logging:
   config: classpath:logback-spring.xml
 thisenv: ${myenv}

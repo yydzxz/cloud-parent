@@ -1,4 +1,4 @@
-cloud-host: 192.168.0.222
+eurekaHost: 192.168.0.222
 server:
   port: 10001
 
@@ -30,4 +30,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://${cloud-host}:10011/eureka,http://${cloud-host}:10012/eureka
+      defaultZone: http://${eurekaHost}:10011/eureka,http://${eurekaHost}:10012/eureka
